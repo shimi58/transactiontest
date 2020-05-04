@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="transaction.infrastructure.datasource.employee.EmployeeMapper">
+
+    <select id="selectEmployees" resultType="transaction.domain.model.employee.Employee">
+        SELECT
+            name,
+            phone,
+            mail
+        FROM
+            employee.member
+        ;
+    </select>
+
+    <insert id="insertEmployee">
+        INSERT INTO employee.member (id, name, phone, mail)
+        VALUES (nextval('employee.id'), #{employee.name}, #{employee.phone}, #{employee.mail});
+    </insert>
+
+    <insert id="updateStatus">
+        UPDATE employee.status SET count = #{employeeNumber.value} WHERE category = 'employee';
+    </insert>
+
+</mapper>
