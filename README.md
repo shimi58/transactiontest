@@ -1,6 +1,6 @@
 # transactiontest
 
-[Spring Bootでトランザクション確認試験を行う](https://qiita.com/drafts/60ea681c74188c4ea8bc/edit)用の動作確認ソース。
+[Spring Bootでトランザクション確認試験を行う](https://qiita.com/shimi58/items/60ea681c74188c4ea8bc)用の動作確認ソース。
 
 
 ## API一覧
@@ -28,7 +28,7 @@
 
 - response
 
-    ~~~json
+    ~~~text
     [Employee(name=森岡 陽介, phone=03-1111-1111, mail=morioka@aa.com)  , Employee(name=浦田 康之, phone=03-1111-1112, mail=urata@aa.com) , Employee(name=大岩 尚人, phone=03-1111-1113, mail=oiwa@aa.com)]
     ~~~
 
